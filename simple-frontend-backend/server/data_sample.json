@@ -1,0 +1,23 @@
+[
+    {
+        "id": "0076",
+        "name": "John",
+        "age": 16,
+        "city": "Newark",
+        "state": "NJ"
+    },
+    {
+        "id": "1246",
+        "name": "Bob",
+        "age": 32,
+        "city": "Philadelphia",
+        "state": "PA"
+    },
+    {
+        "id": "4643",
+        "name": "Erdni",
+        "age": 27,
+        "city": "Charleston",
+        "state": "SC"
+    }
+]

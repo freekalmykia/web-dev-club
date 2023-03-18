@@ -1,0 +1,9 @@
+.people-container {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.bg-blue {
+    background-color: #75acc5;
+}
