@@ -7,3 +7,4 @@
     "liveServer.settings.root": "/simple-frontend-backend/ui"
 }
 4. Open web browser and navigate to localhost:5500
+5. npm start in react-ui folder and navigate to localhost:3000 in the web browser
