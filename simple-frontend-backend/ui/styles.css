@@ -1,9 +1,73 @@
-.people-container {
-    border: 1px solid transparent;
-    border-radius: 10px;
-    padding: 20px;
+.bg-blue {
+    background-color: #d9f0fc;
 }
 
-.bg-blue {
-    background-color: #75acc5;
+body {
+    margin: 0;
+    background-color: rgb(223, 238, 253);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(215, 216, 203);
+    background-color: rgb(14, 87, 146);
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.get-people-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+#get-people {
+    padding: 6px 12px 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: rgb(50, 185, 84);
+    color:rgb(243, 243, 240);
+    cursor: pointer;
+}
+
+#get-people:hover {
+    background-color: rgb(95, 209, 123);
+}
+
+.people-container {
+    margin-left: 12px;
+    margin-right: 12px;
+    border-top: 1px solid rgb(138, 137, 137);
+    margin-bottom: 12px;
+}
+
+.people-container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px 6px 12px;
+    border-bottom: 1px solid rgb(138, 137, 137);
+    border-left: 1px solid rgb(138, 137, 137);
+    border-right: 1px solid rgb(138, 137, 137);
+}
+
+.people-container > div > button {
+    padding: 6px 12px 6px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: rgb(197, 56, 31);
+    color:rgb(243, 243, 240);
+    cursor: pointer;
+}
+
+.people-container > div > button:hover {
+    background-color: rgb(218, 84, 60);
+}
+
+#message {
+    margin-left: 24px;
+    color: red;
 }
