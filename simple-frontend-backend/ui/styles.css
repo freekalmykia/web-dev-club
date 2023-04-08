@@ -4,6 +4,69 @@
     padding: 20px;
 }
 
-.bg-blue {
+/* .bg-blue {
     background-color: #75acc5;
+} */
+
+body {
+    margin: 0;
+    background-color: rgb(140, 206, 236);
+}
+
+h1 {
+    text-align: center;
+    color: #E4F0F7;
+    background-color: rgb(70, 126, 230);
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.button-wrapper > button {
+    border: 1px solid transparent;
+    padding: 6px 12px 6px 12px;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+}
+
+.button-wrapper > button:hover {
+    cursor: pointer;
+    background-color: rgb(48, 180, 48);
+}
+
+.people-container > div {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    margin: 15px 0 15px 0;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 2px rgb(114, 114, 114);
+    border-radius: 5px;
+}
+
+.people-container > div > button {
+    border: 1px solid transparent;
+    padding: 6px 12px 6px 12px;
+    background-color: rgb(179, 53, 53);
+    color: white;
+    border-radius: 4px;
+}
+
+.people-container > div > button:hover {
+    cursor: pointer;
+    background-color: rgb(211, 90, 90);
+}
+
+#message {
+    margin-left: 24px;
+    color: red;
 }
