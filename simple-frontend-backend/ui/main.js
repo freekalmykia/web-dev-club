@@ -24,7 +24,7 @@ function getPeople() {
         }
     }
 
-    fetch('http://localhost:5000/file')
+    fetch('http://localhost:5000/people')
         .then(response => response.json())
         .then(json => {
             json.forEach(person => {
