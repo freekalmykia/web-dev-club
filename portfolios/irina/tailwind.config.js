@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'cherry-bomb': 'Cherry Bomm One'
+        'cherry-bomb': 'Cherry Bomb One'
       }
     },
   },
