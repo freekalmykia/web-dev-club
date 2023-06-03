@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/dist/output.css">
   <title>Portfolio - Albert Sharapov</title>
 </head>
-<body class="px-6 md:px-12 lg:px-24 bg-body">
+<body class="px-6 md:px-12 lg:px-96 bg-body text-white">
   <header class="py-6">
     <nav class="flex justify-between">
       <div class="font-cherry-bomb-one text-2xl text-white">
@@ -23,17 +23,31 @@
         <div class="mr-12">
           <a class="text-white" href="#">My Work</a>
         </div>
-        <div class="bg-red-400 py-1 px-4 rounded">
+        <div class="bg-indigo-600 py-1 px-4 rounded">
           <a class="text-white" href="#">Hire me</a>
         </div>
       </div>
       <div class="flex md:hidden text-white">
-        Button
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>       
       </div>
     </nav>
   </header>
   <main>
-
+    <div class="hero-section flex flex-col md:flex-row justify-between h-80">
+      <div class="hero-section-info flex flex-col justify-center">
+        <h1 class="text-4xl">
+          Building beautiful experiences
+        </h1>
+        <button class="bg-indigo-600 py-1 px-4 rounded">
+          My work
+        </button>
+      </div>
+      <div class="hero-section-photo">
+        <img class="w-full" src="./src/images/Albert_Sharapov.png" alt="Photo of Albert Sharapov">
+      </div>
+    </div>
   </main>
   <footer>
 
