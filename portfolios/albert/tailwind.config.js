@@ -10,7 +10,8 @@ module.exports = {
         'cherry-bomb-one': 'Cherry Bomb One'
       },
       colors: {
-        'body': '#18161f'
+        'body': '#18161f',
+        'info': '#0d86f8'
       }
     },
   },
