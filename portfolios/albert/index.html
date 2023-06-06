@@ -27,15 +27,39 @@
           <a class="text-white font-semibold" href="#">Hire me</a>
         </div>
       </div>
-      <div class="flex md:hidden">
+      <div id="menu-button" class="flex md:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>       
       </div>
+      <div id="menu-overlay" class="absolute hidden top-0 left-0 bg-black text-white w-full h-full">
+        <div class="flex justify-end mr-6 mt-6">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>          
+        </div>
+        <ul class="text-center">
+          <li class="mt-6">
+            <div class="">
+              <a class="font-semibold" href="#">Home</a>
+            </div>
+          </li>
+          <li class="mt-6">
+            <div class="">
+              <a class="font-semibold" href="#">My Work</a>
+            </div>
+          </li>
+          <li class="mt-6">
+            <div class="">
+              <a class="font-semibold" href="#">Hire me</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
   <main>
-    <div class="hero-section flex flex-col md:flex-row justify-between h-fit text-center md:text-start">
+    <div class="hero-section flex flex-col md:flex-row justify-between text-center md:text-start">
       <div class="hero-section-info flex flex-col justify-center">
         <div class="mb-6">
           <h2 class="text-4xl font-bold">
@@ -58,5 +82,6 @@
   <footer>
 
   </footer>
+  <script src="./src/main.js"></script>
 </body>
 </html>
