@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.root": "/simple-frontend-backend/ui"
+    "liveServer.settings.root": "/portfolios/elena",
+    "liveServer.settings.port": 5500,
 }
