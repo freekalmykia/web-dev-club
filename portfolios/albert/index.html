@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/dist/output.css">
   <title>Portfolio - Albert Sharapov</title>
 </head>
-<body class="bg-sky-100 px-6 md:px-12 lg:px-24 xl:px-80 2xl:px-96">
+<body class="bg-body max-w-screen-lg px-6 md:px-12 lg:px-6 mx-auto">
   <header class="py-6">
     <nav class="flex justify-between items-center">
       <h1 class="font-cherry-bomb-one text-3xl">
@@ -59,11 +59,19 @@
     </nav>
   </header>
   <main>
-    <div class="hero-section flex flex-col md:flex-row justify-between text-center md:text-start">
+
+    <!-- Hero section -->
+
+    <div class="hero-section flex flex-col lg:flex-row justify-between text-center lg:text-start mb-12">
+
+      <!-- Section with info -->
+
       <div class="hero-section-info flex flex-col justify-center">
         <div class="mb-6">
-          <h2 class="text-4xl font-bold">
-            Building<br>beautiful web<br>experiences
+          <h2 class="text-7xl md:text-6xl font-bold whitespace-nowrap">
+            <p>Building</p>
+            <p>beautiful web</p>
+            <p>experiences.</p>
           </h2>
         </div>
         <div>
@@ -72,10 +80,39 @@
           </button>
         </div>
       </div>
-      <div class="hero-section-photo">
-        <div class="photo-card bg-sky-100 rounded-full overflow-hidden">
-          <img class="max-w-[400px]" src="./src/images/albert.png" alt="Photo of Albert Sharapov">
+
+      <!-- Start Section with photo -->
+
+      <div class="hero-section-photo flex justify-center">
+        <div class="photo-card bg-body overflow-hidden w-fit h-fit">
+          <img class="max-w-[650px]" src="./src/images/albert_2.png" alt="Photo of Albert Sharapov">
         </div>
+      </div>
+    </div>
+
+    <!-- My work -->
+
+    <div>
+      <div class="mb-6">
+        <div class="stick w-12 h-2 rounded-full bg-info"></div>
+        <div>
+          <h3 class="text-2xl font-extrabold">
+            My Work
+          </h3>
+        </div>
+      </div>
+      <div>
+        <p>
+          I've had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend.
+        </p>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 1</div>
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 2</div>
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 3</div>
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 4</div>
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 5</div>
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 6</div>
       </div>
     </div>
   </main>
