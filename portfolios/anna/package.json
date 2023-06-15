@@ -1,0 +1,11 @@
+{
+  "name": "anna-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "Anna Ivanova",
+  "license": "MIT"
+}
