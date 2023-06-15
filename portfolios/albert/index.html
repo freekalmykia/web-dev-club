@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/dist/output.css">
+  <title>Portfolio - Albert Sharapov</title>
+</head>
+<body class="bg-body max-w-screen-lg px-6 md:px-12 lg:px-6 mx-auto">
+  <header class="py-6">
+    <nav class="flex justify-between items-center">
+      <h1 class="font-cherry-bomb-one text-3xl">
+        Albert Sharapov
+      </h1>
+      <div class="hidden md:flex items-center">
+        <div class="mr-12">
+          <a class="font-semibold" href="#">Home</a>
+        </div>
+        <div class="mr-12">
+          <a class="font-semibold" href="#">My Work</a>
+        </div>
+        <div class="bg-info py-1 px-4 rounded">
+          <a class="text-white font-semibold" href="#">Hire me</a>
+        </div>
+      </div>
+      <div id="menu-button" class="flex md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>       
+      </div>
+      <div id="menu-overlay" class="absolute hidden top-0 left-0 bg-black text-white w-full h-full">
+        <div class="flex justify-end mr-6 mt-6">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>          
+        </div>
+        <ul class="text-center">
+          <li class="mt-6">
+            <div class="">
+              <a class="font-semibold" href="#">Home</a>
+            </div>
+          </li>
+          <li class="mt-6">
+            <div class="">
+              <a class="font-semibold" href="#">My Work</a>
+            </div>
+          </li>
+          <li class="mt-6">
+            <div class="">
+              <a class="font-semibold" href="#">Hire me</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <!-- Hero section -->
+
+    <div class="hero-section flex flex-col lg:flex-row justify-between text-center lg:text-start mb-12">
+
+      <!-- Section with info -->
+
+      <div class="hero-section-info flex flex-col justify-center">
+        <div class="mb-6">
+          <h2 class="text-7xl md:text-6xl font-bold whitespace-nowrap">
+            <p>Building</p>
+            <p>beautiful web</p>
+            <p>experiences.</p>
+          </h2>
+        </div>
+        <div>
+          <button class="bg-info py-2 px-6 rounded text-white">
+            My work
+          </button>
+        </div>
+      </div>
+
+      <!-- Start Section with photo -->
+
+      <div class="hero-section-photo flex justify-center">
+        <div class="photo-card bg-body overflow-hidden w-fit h-fit">
+          <img class="max-w-[650px]" src="./src/images/albert_2.png" alt="Photo of Albert Sharapov">
+        </div>
+      </div>
+    </div>
+
+    <!-- My work -->
+
+    <div>
+      <div class="mb-6">
+        <div class="stick w-12 h-2 rounded-full bg-info"></div>
+        <div>
+          <h3 class="text-2xl font-extrabold">
+            My Work
+          </h3>
+        </div>
+      </div>
+      <div>
+        <p>
+          I've had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend.
+        </p>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 1</div>
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 2</div>
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 3</div>
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 4</div>
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 5</div>
+        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 6</div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="./src/main.js"></script>
+</body>
+</html>
