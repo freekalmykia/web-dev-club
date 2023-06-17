@@ -23,8 +23,8 @@
         <div class="mr-12">
           <a class="font-semibold" href="#">My Work</a>
         </div>
-        <div class="bg-info py-1 px-4 rounded">
-          <a class="text-white font-semibold" href="#">Hire me</a>
+        <div class="bg-info hover:bg-blue-600 py-1 px-4 rounded">
+          <a class="text-white font-semibold" href="#hire-me">Hire me</a>
         </div>
       </div>
       <div id="menu-button" class="flex md:hidden">
@@ -51,7 +51,7 @@
           </li>
           <li class="mt-6">
             <div class="">
-              <a class="font-semibold" href="#">Hire me</a>
+              <a class="font-semibold" href="#hire-me">Hire me</a>
             </div>
           </li>
         </ul>
@@ -62,13 +62,13 @@
 
     <!-- Hero section -->
 
-    <div class="hero-section flex flex-col lg:flex-row justify-between text-center lg:text-start mb-12">
+    <div class="hero-section flex flex-col lg:flex-row justify-between text-center lg:text-start mt-24 lg:mt-0 mb-12">
 
       <!-- Section with info -->
 
       <div class="hero-section-info flex flex-col justify-center">
         <div class="mb-6">
-          <h2 class="text-7xl md:text-6xl font-bold whitespace-nowrap">
+          <h2 class="text-5xl md:text-6xl lg:text-7xl font-bold whitespace-nowrap">
             <p>Building</p>
             <p>beautiful web</p>
             <p>experiences.</p>
@@ -85,16 +85,16 @@
 
       <div class="hero-section-photo flex justify-center">
         <div class="photo-card bg-body overflow-hidden w-fit h-fit">
-          <img class="max-w-[650px]" src="./src/images/albert_2.png" alt="Photo of Albert Sharapov">
+          <img class="max-w-full md:max-w-[510px]" src="./src/images/albert_2.png" alt="Photo of Albert Sharapov">
         </div>
       </div>
     </div>
 
     <!-- My work -->
 
-    <div>
+    <div class="mb-12">
       <div class="mb-6">
-        <div class="stick w-12 h-2 rounded-full bg-info"></div>
+        <div class="stick w-12 h-2 rounded-full bg-info mb-1"></div>
         <div>
           <h3 class="text-2xl font-extrabold">
             My Work
@@ -106,13 +106,120 @@
           I've had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend.
         </p>
       </div>
-      <div class="grid grid-cols-3 gap-4">
-        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 1</div>
-        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 2</div>
-        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 3</div>
-        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 4</div>
-        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 5</div>
-        <div class="flex justify-center items-center max-w-xl h-52 bg-yellow-400">Work 6</div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center mb-12 mt-6">
+        <div class="bg-gray-100 rounded-md overflow-hidden">
+          <div>
+            <img src="/src/images/no-code.png" alt="Project 1">
+          </div>
+          <div class="p-4">
+            <h5 class="text-xl font-semibold mb-2">Multi-axis motor controller</h5>
+            <h6>NodeJS, ReactJS, Redux, Socket.io, WebRTC</h6>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-md overflow-hidden">
+          <div>
+            <img src="/src/images/no-code.png" alt="Project 1">
+          </div>
+          <div class="p-4">
+            <h5 class="text-xl font-semibold mb-2">Multi-axis motor controller</h5>
+            <h6>NodeJS, ReactJS, Redux, Socket.io</h6>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-md overflow-hidden">
+          <div>
+            <img src="/src/images/no-code.png" alt="Project 1">
+          </div>
+          <div class="p-4">
+            <h5 class="text-xl font-semibold mb-2">Multi-axis motor controller</h5>
+            <h6>NodeJS, ReactJS, Redux, Socket.io</h6>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-md overflow-hidden">
+          <div>
+            <img src="/src/images/no-code.png" alt="Project 1">
+          </div>
+          <div class="p-4">
+            <h5 class="text-xl font-semibold mb-2">Multi-axis motor controller</h5>
+            <h6>NodeJS, ReactJS, Redux, Socket.io</h6>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-md overflow-hidden">
+          <div>
+            <img src="/src/images/no-code.png" alt="Project 1">
+          </div>
+          <div class="p-4">
+            <h5 class="text-xl font-semibold mb-2">Multi-axis motor controller</h5>
+            <h6>NodeJS, ReactJS, Redux, Socket.io</h6>
+          </div>
+        </div>
+        <div class="bg-gray-100 rounded-md overflow-hidden">
+          <div>
+            <img src="/src/images/no-code.png" alt="Project 1">
+          </div>
+          <div class="p-4">
+            <h5 class="text-xl font-semibold mb-2">Multi-axis motor controller</h5>
+            <h6>NodeJS, ReactJS, Redux, Socket.io</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hire me -->
+
+    <div id="hire-me">
+      <div class="mb-6">
+        <div class="stick w-12 h-2 rounded-full bg-info mb-1"></div>
+        <div>
+          <h3 class="text-2xl font-extrabold">
+            Hire me
+          </h3>
+        </div>
+      </div>
+      <div class="mb-6">
+        <p>
+          Feel free to contact me any time, through any method below.
+        </p>
+      </div>
+      <div class="mb-24">
+        <div class="flex flex-col-reverse md:flex-row">
+          <div class="md:mr-24">
+            <div class="flex flex-col mb-6">
+              <label class="mb-3 font-semibold" for="label">Name</label>
+              <input class="border border-gray-300 h-8" type="text">
+            </div>
+            <div class="flex flex-col mb-6">
+              <label class="mb-3 font-semibold" for="label">Email</label>
+              <input class="border border-gray-300 h-8" type="text">
+            </div>
+            <div class="flex flex-col mb-6">
+              <label class="mb-3 font-semibold" for="message">Message</label>
+              <textarea class="border border-gray-300" name="message" id="message" cols="50" rows="7"></textarea>
+            </div>
+          </div>
+          <div class="md:mt-6">
+            <div class="mb-6">
+              <span>Email: </span>
+              <a class="underline" href="mailto:albert.sharapov@gmail.com">
+                albert.sharapov@gmail.com
+              </a>
+            </div>
+            <div class="flex mb-12">
+              <div class="mr-3">
+                <a href="https://www.linkedin.com/in/asharapov/" target="_blank">
+                  <svg class="fill-info hover:fill-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+              </div>
+              <div>
+                <a href="https://twitter.com/AlSharp85" target="_blank">
+                  <svg class="fill-info hover:fill-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6">
+          <button class="bg-info hover:bg-blue-600 py-2 px-6 rounded text-white">Send it!</button>
+        </div>
       </div>
     </div>
   </main>
