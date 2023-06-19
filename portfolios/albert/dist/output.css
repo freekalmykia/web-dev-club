@@ -583,10 +583,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
 }
@@ -622,19 +618,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.min-h-\[290px\] {
-  min-height: 290px;
-}
-
-.min-h-\[112px\] {
-  min-height: 112px;
-}
-
-.min-h-max {
-  min-height: -moz-max-content;
-  min-height: max-content;
 }
 
 .w-12 {
