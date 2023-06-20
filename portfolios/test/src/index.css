@@ -27,9 +27,9 @@ body {
   @apply text-3xl font-bold;
 }
 
-.secondary-title::before {
-  content: ""
-    @apply block w-12 h-2 bg-theme rounded-full mb-1
+.secondary-title:before {
+  content:
+    @apply block w-12 h-2 bg-theme rounded-full mb-1;
 }
 
 .section-paragraph {

@@ -5,32 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/index.css">
+    <link rel="stylesheet" href="/test/dist/index.css">
     <link rel="stylesheet" href="tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Tourney&display=swap"
         rel="stylesheet">
-    <title>Portfolio Elena</title>
+    <title>Portfolio Elena Ivanov</title>
 </head>
 
 <body class="bg-body text-white font-poppins pb-12">
     <header class="py-6">
         <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-            <div class="text-lg font-bold">Elena.iva</div>
+            <div class="text-lg font-bold">Elena Ivanova</div>
             <div class="hidden md:flex space-x-12 items-center">
                 <a href="#" class="text-selected-text">Home</a>
                 <a href="#work">My work</a>
                 <a href="#clients">Clients</a>
                 <a href="#hire"><button class="px-6 py-2 bg-theme font-bold">Hire me</button></a>
             </div>
-            <div class="md:hidden">
+            <div id="menu-button" class="flex md:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                 </svg>
             </div>
+            <div id="menu-overlay" class="absolute hidden top-0 left-0 bg-black text-white w-full h-full">
+                <div class="flex justify-end mr-6 mt-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <ul class="text-center">
+                    <li class="mt-6">
+                        <div class="">
+                            <a class="font-semibold" href="#">Home</a>
+                        </div>
+                    </li>
+                    <li class="mt-6">
+                        <div class="">
+                            <a class="font-semibold" href="#">My work</a>
+                        </div>
+                    </li>
+                    <li class="mt-6">
+                        <div class="">
+                            <a class="font-semibold" href="#">Hire me</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </header>
 
@@ -97,10 +123,27 @@
     <div class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-2 w-full">
         <section class="w-full">
             <h2 id="hire" class="bg-secondary-title">Hire me</h2>
-            <p class="selection-paragraph">Feel free to contact me any time, through any</p>
+            <p class="selection-paragraph">Feel free to contact me any time, through anytime 2xxxxxxxxx</p>
+
+            <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
+                <div class="space-y-12">
+                    <div>
+                        <label class="text-white block mb-6 text-xl font-bold">Name</label>
+                        <input class="w-full border border-input-border bg-input px-y py-4">
+                    </div>
+                    <div>
+                        <label class="text-white block mb-6 text-xl font-bold">Message</label>
+                        <textarea type="email" class="w-full border border-input-border bg-input px-y py-4"></textarea>
+                    </div>
+                    <button class="px-6 py-2 bg-theme text-white font-white font-bold">Send it!</button>
+                </div>
+
+
+            </div>
         </section>
 
     </div>
+    <script src="./src/main.js"></script>
 </body>
 
 </html>

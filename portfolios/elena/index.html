@@ -5,49 +5,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/dist/index.css">
-    <title>Portfolio - Elena Iva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Tourney:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/elena/dist/index.css">
+    <title>Portfolio - Elena Ivanovich</title>
 </head>
 
-
-<body class="px-6 md:px-12 lg:px-96 bg-black text-white">
+<body class="px-6 md:px-12 lg:px-24 x1:px-24 2x1:px-96 bg-body text-white max-w-screen mx-auto">
     <header class="py-6">
-        <nav class="flex justify-between">
-            <div class=" text-2x1 text-white">
+        <nav class="container flex justify-between items-center">
+            <h1 class="font-poppins text-3x1">
                 Elena.iva
-            </div>
+            </h1>
             <div class="hidden md:flex items-center">
                 <div class="mr-12">
-                    <a class="text-white" href="#">Home</a>
+                    <a class="font-semibold" href="#">Home</a>
                 </div>
-                <div class="">
-                    <a href="#" class="text-selected-text">Home</a>
-                    <a href="#work">My work</a>
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        >Hire me</a>
+                <div class="mr-12">
+                    <a class="font-semibold" href="#">My work</a>
                 </div>
+                <div class="mr-12">
+                    <a class="font-semibold" href="#">Clients</a>
+
+                </div>
+                <div class="bg-info py-1 px-4 rounded">
+                    <a class="text-white font-semibold" href="#">Hire me</a>
+                </div>
+            </div>
+            <div id="menu-button" class="flex md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            <div id="menu-overlay" class="absolute hidden top-0 left-0 bg-black text-white w-full h-full">
+                <div class="flex justify-end mr-6 mt-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                    </svg>
+                </div>
+                <ul class="mt-6">
+                    <li>
+                        <div class="class">
+                            <a class="font-semibold" href="#">Home</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="class">
+                            <a class="font-semibold" href="#">My work</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="class">
+                            <a class="font-semibold" href="#">Hire me</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
     <main>
-        <div class="hero-section flex flex-col md:flex-row justify-between h-80">
+
+        <!-- Hero section-->
+
+        <div
+            class="hero-section flex flex-col lg:flex-row justify-between text-center lg:text-start mt-24 lg-mt-0 mb-12">
             <div class="hero-section-info flex flex-col justify-center">
-                <h1 class="text-4x1">
-                    Building beautiful experiences
-                </h1>
-                <button class="bg-indigo-600 py-1 px-4 rounded">
-                    My work
-                </button>
+                <div>
+                    <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage xl:block">
+                        <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-6 ">
+                            <a href="#"
+                                class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                                <span class="bg-black px-2py-1 rounded-md ml-10 opacity-0">Home</span>
+                            </a>
+                            <a href="#" class="nav-dot  block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                                <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Work</span>
+                            </a>
+                            <a href="#"
+                                class="nav-dot  block w-7 h-7 rounded-full border-full border-4 border-nav bg-body">
+                                <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Clients</span>
+                            </a>
+                            <a href="#" class="nav-dot  block w-7 h-7 rounded-full border-4 border-nav bg-body">
+                                <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0">Hire</span>
+                            </a>
+                        </div>
+                </div>
+                </nav>
+
+                <div class="mt-5 mb-5 ml-24 flex flex-wrap lg:ml-50 justify-center ">
+                    <h2 class="text-5x1 md:text-5xl lg:text-6xl font-bold whitespace-nowrap ">
+                        Building<br>beautiful<br>experiences.
+                    </h2>
+                    <div class="w-full flex justify-center md:justify-start">
+                        <button
+                            class="bg-info hover:bg-blue-600 py-1 px-9 rounded text-white mt-12 flex items-center space-x-3 ">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                <span>My work</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
             </div>
-            <div class="hero-section-photo">
-                <img class="w-full" src="./src/img/Full-Screen-Wallpaper-For-Laptop-5.jpg" alt="photo of Elena">
+            <div class="hero-section-photo flex justify-center">
+                <div class="photo-card bg-body overflow-hidden w-fit h-fit">
+                    <img class="max-w-full" src="./src/img/photo_2023-06-18_18-56-40.jpg" alt="photo of Elena">
+                </div>
             </div>
         </div>
+
+        <!--My work section-->
+
+        <div">
+            <div>
+                <div class="stick w-12 h-2 bg-info rounded-full"></div>
+                <div>
+                    <h3 class="text-2xl font-extrabold mb-6">
+                        My work
+                    </h3>
+                </div>
+            </div>
+            <div class="mb-6">
+                <p> I had the pleasure of working with multiple Fortune 500 companies
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                <img src="src/img/avel-chuklanov-DUmFLtMeAbQ-unsplash-scaled.jpg" alt="comp">
+                <img src="src/img/istoc.jpg" alt="comp">
+                <img src="src/img/avel-chuklanov-DUmFLtMeAbQ-unsplash-scaled.jpg" alt="comp">
+                <img src="src/img/Sovety-po-organizatsii-rabochego-mesta-bez-zagromozhdeniya.webp" alt="comp">
+                <img src="src/img/Sovety-po-organizatsii-rabochego-mesta-bez-zagromozhdeniya.webp" alt="comp">
+                <img src="src/img/Sovety-po-organizatsii-rabochego-mesta-bez-zagromozhdeniya.webp" alt="comp">
+
+            </div>
+
+            <!--Hire me-->
+            <div id="hire-me">
+                <div class="mt-12 mb-6">
+                    <div class="stick w-12 h-2 bg-info rounded-full"></div>
+                    <div>
+                        <h3 class="text-2xl font-extrabold">Hire me</h3>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <p>Feel free to contact me any time, through any method below.</p>
+                </div>
+                <div class="mb-24">
+                    <div class="flex flex-rol-reverse md:flex-row">
+                        <div class="md:mr-24">
+                            <div class="flex flex-col mb-6">
+                                <label class="mb-3 font-semibold" for="label">Name</label>
+                                <input class="border border-gray-300 h-8" type="text">
+                            </div>
+                            <div flex flex-col mb-6>
+                                <label class="mb-3 font-semibold" for="label">Email</label>
+                                <input class="border border-gray-300 h-8" type="text">
+                            </div>
+                            <div class="flex flex-col mb-6">
+                                <label class="mb-3 font-semibold" for="message">Message</label>
+                                <textarea class="border border-gray-300" name="message" id="message" cols="50"
+                                    rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="md:mt-6">
+                            <div class="mb-6">
+                                <span>Email:</span>
+                                <a clas="underline" href="mailto:heleniva02@gmail.com">heleniva02@gmail.com</a>
+                            </div>
+                            <!---linkedin area-->
+                            <div class="flex mb-12">
+                                <div class="mr-3">
+                                    <a href="        ">
+                                        svg??????????
+                                    </a>
+                                </div>
+                            </div>
+                            <!---linkedin area-->
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <button class="bg-info hover:bg-blue-600 py-2 px-6 rounded text-white">Send it!</button>
+                    </div>
+                </div>
+            </div>
+
+
     </main>
+    <footer>
+
+    </footer>
+    <script src="./src/main.js">
+    </script>
 </body>
 
 </html>
