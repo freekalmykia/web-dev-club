@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Nogana Dzhambinova
+    </title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@600;700&family=Tsukimi+Rounded&display=swap" rel="stylesheet">
+</head>
+<body class="px-6  md:px-12 max-w-screen-lg lg:px-24 bg-black-theme text-white mx-auto">
+    <header class="py-6">
+        <nav class="flex justify-between">
+            <h1 class="font-kaushan-script text-3xl text-white flex items-center">
+                Nogana
+            </h1>
+            <div class="hidden md:flex items-center font-bold">
+                <div class="mr-12"> 
+                    <a href="#">Home</a>
+                </div>
+                <div class="mr-12">
+                    <a href="#">My work</a>
+                </div>
+                <div class="bg-blue-button px-4 py-1 rounded-md">
+                    <a href="#">Hire me</a>
+                </div>
+            </div>
+            <div id="menu-button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </div>
+            <div id="menu-overlay" class="hidden text-white absolute top-0 left-0 bg-black w-full h-full text-center mt">
+                <div class="flex justify-end mr-3 mt-3">
+                    <svg width="45" height="45" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="12" height="12" fill="white" fill-opacity="0.01"/><path d="M14 14L34 34" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 34L34 14" stroke="#333" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <ul>
+                    <li>
+                        <div class="mt-6"> 
+                            <a class=font-semibold href="#">Home</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mt-6">
+                            <a class="font-semibold" href="#">My work</a>
+                        </div></li>
+                    <li>
+                        <div class="mt-6">
+                            <a class="font-semibold" href="#">Hire me</a>
+                        </div></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Hero section -->
+        <div class="hero-section flex flex-col md:flex-row justify-between text-center md:text-start">
+
+            <!-- Section with info -->
+
+            <div class="hero-section-info flex flex-col justify-center">         
+                <div class="mb-6">
+                    <h2 class="text-4xl font-bold">
+                        Building <br> beautiful web <br> experiences
+                    </h2>
+                </div>
+                <div>
+                    <button class="bg-blue-button py-2 px-6 rounded text-white font-semibold">
+                        My work
+                    </button>
+                </div>    
+            </div>
+
+            <!-- Section with photo -->
+
+            <div class="hero-section-photo grid place-items-center">
+                <div class="photo-card rounded-full overflow-hidden w-fit">
+                    <img class="max-w-[300px]" src="./src/img/photo.png" alt="Photo of Nogana Dzhambinova">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- My work -->
+
+        <div>
+            <div class="mb-6">
+                <div class="w-12 h-2 bg-blue-button rounded-full mt-12"></div>
+                <div class="font-bold">
+                    <h3>My work</h3>
+                </div>
+            </div>
+            <div class="mb-6">
+                <p>I've have had the pleasure of working with multiple Fortune 500 companies, designing and implementing both frontend and backend </p>
+            </div>
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center ">
+                <div class=""><img src="src/img/1.jpeg"></div>
+                <div><img src="src/img/2.png"></div>
+                <div><img src="src/img/3.webp"></div>
+                <div><img src="src/img/4.jpeg"></div>
+                <div><img src="src/img/5.jpeg"></div>
+                <div><img src="src/img/6.jpeg"></div>
+            </div>
+        </div>
+
+        <!-- Hire me -->
+        <div id="hire-me">
+            
+            <div class="mb-6">
+                <div class="w-12 h-2 bg-blue-button rounded-full mt-12"></div>
+                <div class="font-bold">
+                    <h3>Hire me</h3>
+                </div>
+            </div>
+    
+            <div class="section mb-24">
+               
+                <div class="form flex flex-col-reverse md:flex-row">
+                    
+                    <div class="left-section">
+                        <div class="flex flex-col mb-6">
+                            <label class="mb-3 font-semibold" for="name">Name</label>
+                            <input class="border border-gray-600 bg-gray-700 px-1" type="text">
+                        </div>
+                        <div class="flex flex-col mb-6">
+                            <label class="mb-3 font-semibold" for="email">Email</label>
+                            <input class="border border-gray-600 bg-gray-700 px-1" type="text">
+                        </div>
+                        <div class="flex flex-col mb-6">
+                            <label class="mb-3 font-semibold" for="">Message </label>
+                            <textarea class="border border-gray-600 bg-gray-700 px-1" name="message" cols="50" rows="7"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="right-section mb-6 md:ml-24">
+                        <div class="md:mt-6">
+                            <a href="mailto:nbdzhambinova@gmail.com">nbdzhambinova@gmail.com</a>
+                        </div>
+                        <div class="flex mt-3">
+                            <div class="bg-white rounded-full w-6 mr-3">
+                                <a href="https://twitter.com/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                            </div>
+                            <div class="bg-white rounded-full w-6">
+                                <a href="https://www.linkedin.com/feed/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></a>
+                            </div>
+    
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="button">
+                    <button class="bg-blue-button py-2 px-6 rounded text-white font-semibold">
+                        Sent it!
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./src/main.js"></script>
+
+</body>
+</html>
+ 
