@@ -32,7 +32,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>       
       </div>
-      <div id="menu-overlay" class="absolute hidden top-0 left-0 bg-black text-white w-full h-full">
+      <div id="menu-overlay" class="fixed hidden top-0 left-0 bg-black text-white w-full h-screen z-20">
         <div class="flex justify-end mr-6 mt-6">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -75,7 +75,7 @@
           </h2>
         </div>
         <div>
-          <button class="bg-info hover:bg-blue-600 py-2 px-6 rounded text-white">
+          <button id="hero-section-button" class="bg-info hover:bg-blue-600 py-2 px-6 rounded text-white">
             My work
           </button>
         </div>
@@ -94,7 +94,7 @@
 
     <div id="my-work" class="mb-12">
       <div class="mb-6">
-        <div class="stick w-12 h-2 rounded-full bg-info mb-1"></div>
+        <div class="stick w-12 hover:w-36 duration-1000 h-2 rounded-full bg-info mb-1"></div>
         <div>
           <h3 class="text-2xl font-extrabold">
             My Work
@@ -107,8 +107,8 @@
         </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center mb-12 mt-6">
-        <a class="h-full" href="https://imac.intellidrives.com" target="_blank">
-          <div class="bg-gray-100 rounded-md overflow-hidden">
+        <a class="h-full drop-shadow-[5px_5px_3px_rgba(0,0,0,0.25)] hover:-translate-y-px hover:drop-shadow-[6px_6px_3px_rgba(0,0,0,0.25)]" href="https://imac.intellidrives.com" target="_blank">
+          <div class="bg-gray-100 rounded-md overflow-hidden h-full">
             <div>
               <img src="assets/images/no-code.png" alt="Project 1">
             </div>
@@ -118,7 +118,7 @@
             </div>
           </div>
         </a>
-        <a class="h-full" href="https://freekalmykia.org" target="_blank">
+        <a class="h-full drop-shadow-[5px_5px_3px_rgba(0,0,0,0.25)] hover:-translate-y-px hover:drop-shadow-[6px_6px_3px_rgba(0,0,0,0.25)]" href="https://freekalmykia.org" target="_blank">
           <div class="bg-gray-100 rounded-md overflow-hidden h-full">
             <div>
               <img src="assets/images/freekalmykia_banner.png" alt="Project 2">
@@ -129,7 +129,7 @@
             </div>
           </div>
         </a>
-        <div class="bg-gray-100 rounded-md overflow-hidden h-full">
+        <div class="bg-gray-100 rounded-md overflow-hidden h-full drop-shadow-[5px_5px_3px_rgba(0,0,0,0.25)] hover:-translate-y-px hover:drop-shadow-[6px_6px_3px_rgba(0,0,0,0.25)]">
           <div>
             <img src="assets/images/trades_tracker.png" alt="Project 3">
           </div>
@@ -138,7 +138,7 @@
             <h6>ReactJS, Redux, ExpressJS, Postgres</h6>
           </div>
         </div>
-        <a class="h-full" href="https://oiratcongress.org" target="_blank">
+        <a class="h-full drop-shadow-[5px_5px_3px_rgba(0,0,0,0.25)] hover:-translate-y-px hover:drop-shadow-[6px_6px_3px_rgba(0,0,0,0.25)]" href="https://oiratcongress.org" target="_blank">
           <div class="bg-gray-100 rounded-md overflow-hidden h-full">
             <div>
               <img src="assets/images/oiratcongress.png" alt="Project 4">
@@ -149,7 +149,7 @@
             </div>
           </div>
         </a>
-        <div class="bg-gray-100 rounded-md overflow-hidden h-full">
+        <div class="bg-gray-100 rounded-md overflow-hidden h-full drop-shadow-[5px_5px_3px_rgba(0,0,0,0.25)] hover:-translate-y-px hover:drop-shadow-[6px_6px_3px_rgba(0,0,0,0.25)]">
           <div>
             <img src="assets/images/ui_package.png" alt="Project 5">
           </div>
@@ -158,7 +158,7 @@
             <h6>ReactJS, TailwindCSS, Webpack</h6>
           </div>
         </div>
-        <div class="bg-gray-100 rounded-md overflow-hidden h-full">
+        <div class="bg-gray-100 rounded-md overflow-hidden h-full drop-shadow-[5px_5px_3px_rgba(0,0,0,0.25)] hover:-translate-y-px hover:drop-shadow-[6px_6px_3px_rgba(0,0,0,0.25)]">
           <div>
             <img src="assets/images/blockberrypi.png" alt="Project 6">
           </div>
@@ -174,7 +174,7 @@
 
     <div id="hire-me">
       <div class="mb-6">
-        <div class="stick w-12 h-2 rounded-full bg-info mb-1"></div>
+        <div class="stick w-12 hover:w-36 duration-1000 h-2 rounded-full bg-info mb-1"></div>
         <div>
           <h3 class="text-2xl font-extrabold">
             Hire me
@@ -191,15 +191,15 @@
           <div class="md:mr-24">
             <div class="flex flex-col mb-6">
               <label class="mb-3 font-semibold" for="label">Name</label>
-              <input class="border border-gray-300 h-8" type="text">
+              <input class="border border-gray-300 h-8" type="text" disabled>
             </div>
             <div class="flex flex-col mb-6">
               <label class="mb-3 font-semibold" for="label">Email</label>
-              <input class="border border-gray-300 h-8" type="text">
+              <input class="border border-gray-300 h-8" type="text" disabled>
             </div>
             <div class="flex flex-col mb-6">
               <label class="mb-3 font-semibold" for="message">Message</label>
-              <textarea class="border border-gray-300" name="message" id="message" cols="50" rows="7"></textarea>
+              <textarea class="border border-gray-300" name="message" id="message" cols="50" rows="7" disabled></textarea>
             </div>
           </div>
           <div class="md:mt-6">
@@ -219,7 +219,7 @@
           </div>
         </div>
         <div class="mt-6">
-          <button class="bg-info hover:bg-blue-600 py-2 px-6 rounded text-white">Send it!</button>
+          <button class="bg-info hover:bg-blue-600 py-2 px-6 rounded text-white" disabled>Send it!</button>
         </div>
       </div>
     </div>
