@@ -25,3 +25,6 @@ function handleMenuButtonClick() {
   menu.classList.remove('hidden');
 }
 
+document.getElementById('trades-traker').addEventListener('click', () => {
+  window.open('http://google.com', '_blank');
+})
