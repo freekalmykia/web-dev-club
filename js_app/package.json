@@ -1,0 +1,12 @@
+{
+  "name": "js_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "npx tailwindcss -i ./src/input.css -o ./output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
