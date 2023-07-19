@@ -28,6 +28,43 @@ const getData = async function() {
   }
 }
 
+const createArticle = (article) => {
+  // create all elements
+  const container = document.getElementById('foreach-method');
+  const card = document.createElement('div');
+  const top = document.createElement('div');
+  const bottom = document.createElement('div');
+  const image = document.createElement('img');
+  const title = document.createElement('h2');
+  const summary = document.createElement('p');
+
+  // use content
+  image.setAttribute('src', article.image_url);
+  title.textContent = article.title;
+  summary.textContent = article.summary;
+
+  // attach elements
+  container.appendChild(card);
+
+  card.appendChild(top);
+  card.appendChild(bottom);
+
+  top.appendChild(image);
+
+  bottom.appendChild(title);
+  bottom.appendChild(summary);
+}
+
+// foreach handler
+const forEachMethod = (articles) => {
+  console.log('results: ', articles);
+
+  articles.forEach(article => {
+    createArticle(article);
+  })
+
+}
+
 // 
 async function main() {
   // attach click event listener to "Get data" button
@@ -39,6 +76,8 @@ async function main() {
     //
     await getData();
   });
+
+  document.getElementById('foreach-method-btn').addEventListener('click', () => forEachMethod(data.results))
 
 }
 
