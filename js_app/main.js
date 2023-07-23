@@ -126,8 +126,8 @@ const createArticleCards = articles => {
   });
 }
 
-const mapMethod = results => {
-  const cards = createArticleCards(results);
+const mapMethod = articles => {
+  const cards = createArticleCards(articles);
   cards.forEach(card => attachArticleCard(card));
 }
 
