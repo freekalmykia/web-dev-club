@@ -28,9 +28,13 @@ const getData = async function() {
   }
 }
 
+
+
 const createArticle = (article) => {
-  // create all elements
+
+  // find entry point
   const container = document.getElementById('foreach-method');
+  // create all elements
   const card = document.createElement('div');
   const top = document.createElement('div');
   const bottom = document.createElement('div');
@@ -55,14 +59,76 @@ const createArticle = (article) => {
   bottom.appendChild(summary);
 }
 
+const createArticleCard = article => {
+  // create all elements
+  const card = document.createElement('div');
+  const top = document.createElement('div');
+  const bottom = document.createElement('div');
+  const image = document.createElement('img');
+  const title = document.createElement('h2');
+  const summary = document.createElement('p');
+
+  // use content
+  image.setAttribute('src', article.image_url);
+  title.textContent = article.title;
+  summary.textContent = article.summary;
+
+  card.appendChild(top);
+  card.appendChild(bottom);
+
+  top.appendChild(image);
+
+  bottom.appendChild(title);
+  bottom.appendChild(summary);
+
+  return card;
+}
+
+const attachArticleCard = card => {
+  // find entry point
+  const container = document.getElementById('foreach-method');
+  container.appendChild(card);
+}
+
 // foreach handler
 const forEachMethod = (articles) => {
-  console.log('results: ', articles);
-
   articles.forEach(article => {
-    createArticle(article);
+    // createArticle(article);
+    const card = createArticleCard(article);
+    attachArticleCard(card);
   })
+}
 
+const createArticleCards = articles => {
+  return articles.map((article) => {
+    // create all elements
+    const card = document.createElement('div');
+    const top = document.createElement('div');
+    const bottom = document.createElement('div');
+    const image = document.createElement('img');
+    const title = document.createElement('h2');
+    const summary = document.createElement('p');
+
+    // use content
+    image.setAttribute('src', article.image_url);
+    title.textContent = article.title.toUpperCase();
+    summary.textContent = article.summary;
+
+    card.appendChild(top);
+    card.appendChild(bottom);
+
+    top.appendChild(image);
+
+    bottom.appendChild(title);
+    bottom.appendChild(summary);
+
+    return card;
+  });
+}
+
+const mapMethod = results => {
+  const cards = createArticleCards(results);
+  cards.forEach(card => attachArticleCard(card));
 }
 
 // 
@@ -79,6 +145,9 @@ async function main() {
 
   document.getElementById('foreach-method-btn').addEventListener('click', () => forEachMethod(data.results))
 
+  document.getElementById('map-method-btn').addEventListener('click', () => {
+    mapMethod(data.results);
+  })
 }
 
 main();
