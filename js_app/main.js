@@ -128,7 +128,8 @@ const createArticleCards = articles => {
 
 const mapMethod = articles => {
   const cards = createArticleCards(articles);
-  cards.forEach(card => attachArticleCard(card));
+  const container = document.getElementById('map-method');
+  container.append(...cards);
 }
 
 // 
