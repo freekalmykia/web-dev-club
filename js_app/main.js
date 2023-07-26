@@ -132,6 +132,19 @@ const mapMethod = articles => {
   container.append(...cards);
 }
 
+const filterMethod = articles => {
+  const DateTime = luxon.DateTime;
+  const date1 = DateTime.now().minus({ hours: 7 });
+  const filteredArticles = articles.filter(article => {
+    const publishedAt = DateTime.fromISO(article.published_at);
+    return date1 > publishedAt;
+  })
+
+  const cards = createArticleCards(filteredArticles);
+  const container = document.getElementById('filter-method');
+  container.append(...cards);
+}
+
 // 
 async function main() {
   // attach click event listener to "Get data" button
@@ -148,6 +161,10 @@ async function main() {
 
   document.getElementById('map-method-btn').addEventListener('click', () => {
     mapMethod(data.results);
+  })
+
+  document.getElementById('filter-method-btn').addEventListener('click', () => {
+    filterMethod(data.results);
   })
 }
 
