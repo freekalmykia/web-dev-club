@@ -4,6 +4,8 @@ let dataReceived = false;
 // variable to store data from the server
 let data = null;
 
+const DateTime = luxon.DateTime;
+
 // function that gets data from remote server
 // it takes some time, that is why we use 'async' word before 'function'
 // in which we use 'await' before another function which actually performs data fetching.
@@ -133,8 +135,7 @@ const mapMethod = articles => {
 }
 
 const filterMethod = articles => {
-  const DateTime = luxon.DateTime;
-  const date1 = DateTime.now().minus({ hours: 7 });
+  const date1 = DateTime.now().minus({ hours: 24 });
   const filteredArticles = articles.filter(article => {
     const publishedAt = DateTime.fromISO(article.published_at);
     return date1 > publishedAt;
@@ -143,6 +144,57 @@ const filterMethod = articles => {
   const cards = createArticleCards(filteredArticles);
   const container = document.getElementById('filter-method');
   container.append(...cards);
+
+  getShownArticles();
+}
+
+const concatMethod = async () => {
+  // get next data
+  const response = await fetch(data.next);
+  const nextData = await response.json();
+
+  // get existing article
+  const container = document.getElementById('map-method');
+  const children = container.childNodes;
+
+  const allArticles = [...children].concat(createArticleCards(nextData.results));
+
+  container.append(...allArticles);
+}
+
+const sortMethod = (articles) => {
+  const container = document.getElementById('map-method');
+
+  const sortedArticles = articles.sort((a, b) => {
+    const aDate = DateTime.fromISO(a.published_at);
+    const bDate = DateTime.fromISO(b.published_at);
+
+    if (aDate > bDate) return 1;
+    if (aDate < bDate) return -1;
+    return 0;
+  })
+
+  const sortedArticleCards = createArticleCards(sortedArticles);
+
+  // remove previous article cards
+  while (container.hasChildNodes()) {
+    container.removeChild(container.lastChild)
+  }
+
+  container.append(...sortedArticleCards);
+}
+
+const getShownArticles = () => {
+  const counter = document.getElementById('counter');
+
+  const container = document.getElementById('filter-method');
+  const childNodes = container.childNodes;
+
+  const numberOfArticles = [...childNodes].reduce((acc, element, index) => {
+    return acc + 1;
+  }, 0)
+
+  counter.textContent = numberOfArticles;
 }
 
 // 
@@ -165,6 +217,14 @@ async function main() {
 
   document.getElementById('filter-method-btn').addEventListener('click', () => {
     filterMethod(data.results);
+  })
+
+  document.getElementById('concat-method-btn').addEventListener('click', () => {
+    concatMethod();
+  })
+
+  document.getElementById('sort-method-btn').addEventListener('click', () => {
+    sortMethod(data.results);
   })
 }
 
