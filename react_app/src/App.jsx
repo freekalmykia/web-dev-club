@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Button from './components/Button';
 import Article from './components/Article';
 import LifeCycleMethods from './components/LifeCycleMethods';
+import HooksComponent from './components/Hooks';
+import PropsComponent from './components/PropsComponent';
 
 function App() {
 
@@ -11,7 +13,9 @@ function App() {
     articles: [],
     dataReceived: false,
     error: null,
-    showLifeCycleMethods: true
+    showLifeCycleMethods: true,
+    showHooksComponent: true,
+    title: 'Initial Title'
   })
 
   useEffect(() => {
@@ -49,11 +53,23 @@ function App() {
     setPageState({ ...pageState, showLifeCycleMethods: false });
   }
 
+  const unmountHooksComponent = () => {
+    setPageState({ ...pageState, showHooksComponent: false });
+  }
+
+  const changeTitle = (text) => {
+    setPageState({ ...pageState, title: text });
+  }
+
   return (
     <div className="App">
       <Header />
       { pageState.showLifeCycleMethods ? <LifeCycleMethods /> : null }
+      { pageState.showHooksComponent ? <HooksComponent /> : null }
+      <PropsComponent title={pageState.title} />
       <Button onClick={unmountLifeCycleComponent} text="Unmount Life Cycle Component" />
+      <Button onClick={unmountHooksComponent} text="Unmount Hooks Component" />
+      <Button onClick={e => changeTitle('Updated Title')} text="Change Title" />
       <Button onClick={getData} text="Get Data" />
       {
         pageState.articles.map(article => {
